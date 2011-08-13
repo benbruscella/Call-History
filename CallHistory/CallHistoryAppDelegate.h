@@ -1,6 +1,6 @@
 //
-//  Call_HistoryAppDelegate.h
-//  Call History
+//  CallHistoryAppDelegate.h
+//  CallHistory
 //
 //  Created by Ben Bruscella on 16/05/11.
 //  Copyright 2011 SPK. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Call_HistoryAppDelegate : NSObject <UIApplicationDelegate> {
+@interface CallHistoryAppDelegate : NSObject <UIApplicationDelegate> {
 
 }
 

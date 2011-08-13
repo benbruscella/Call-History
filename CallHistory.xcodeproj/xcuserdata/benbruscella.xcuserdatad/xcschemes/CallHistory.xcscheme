@@ -13,10 +13,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D156E1FD13810F0B000A5070"
-               BuildableName = "Call History.app"
-               BlueprintName = "Call History"
-               ReferencedContainer = "container:Call History.xcodeproj">
+               BlueprintIdentifier = "D18F3042138114DC00C1AD07"
+               BuildableName = "CallHistory.app"
+               BlueprintName = "CallHistory"
+               ReferencedContainer = "container:CallHistory.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,10 +31,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D156E22613810F0B000A5070"
-               BuildableName = "Call HistoryTests.octest"
-               BlueprintName = "Call HistoryTests"
-               ReferencedContainer = "container:Call History.xcodeproj">
+               BlueprintIdentifier = "D18F306B138114DD00C1AD07"
+               BuildableName = "CallHistoryTests.octest"
+               BlueprintName = "CallHistoryTests"
+               ReferencedContainer = "container:CallHistory.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -50,10 +50,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D156E1FD13810F0B000A5070"
-            BuildableName = "Call History.app"
-            BlueprintName = "Call History"
-            ReferencedContainer = "container:Call History.xcodeproj">
+            BlueprintIdentifier = "D18F3042138114DC00C1AD07"
+            BuildableName = "CallHistory.app"
+            BlueprintName = "CallHistory"
+            ReferencedContainer = "container:CallHistory.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D156E1FD13810F0B000A5070"
-            BuildableName = "Call History.app"
-            BlueprintName = "Call History"
-            ReferencedContainer = "container:Call History.xcodeproj">
+            BlueprintIdentifier = "D18F3042138114DC00C1AD07"
+            BuildableName = "CallHistory.app"
+            BlueprintName = "CallHistory"
+            ReferencedContainer = "container:CallHistory.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

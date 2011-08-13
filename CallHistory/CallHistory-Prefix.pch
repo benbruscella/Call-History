@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'Call History' target in the 'Call History' project
+// Prefix header for all source files of the 'CallHistory' target in the 'CallHistory' project
 //
 
 #import <Availability.h>

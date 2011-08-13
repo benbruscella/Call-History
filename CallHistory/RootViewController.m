@@ -1,6 +1,6 @@
 //
 //  RootViewController.m
-//  Call History
+//  CallHistory
 //
 //  Created by Ben Bruscella on 16/05/11.
 //  Copyright 2011 SPK. All rights reserved.
@@ -27,6 +27,30 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject)];
     self.navigationItem.rightBarButtonItem = addButton;
     [addButton release];
+    
+    
+    callCenter = [[CTCallCenter alloc] init];
+    callCenter.callEventHandler = ^(CTCall* call)
+    {
+        if (call.callState == CTCallStateDisconnected)
+        { 
+            NSLog(@"Call has been disconnected");
+        }
+        else if (call.callState == CTCallStateConnected) 
+        {
+            NSLog(@"Call has just been connected");
+        }
+        else if(call.callState == CTCallStateIncoming)
+        {
+            //CTCarrier *carrier = [[CTCarrier alloc] init];
+            NSLog(@"Call is incoming");
+        }
+        else
+        {
+            NSLog(@"None of the conditions");    
+        }
+    };
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated

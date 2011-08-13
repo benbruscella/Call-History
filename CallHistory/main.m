@@ -1,6 +1,6 @@
 //
 //  main.m
-//  Call History
+//  CallHistory
 //
 //  Created by Ben Bruscella on 16/05/11.
 //  Copyright 2011 SPK. All rights reserved.

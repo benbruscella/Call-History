@@ -1,16 +1,15 @@
 //
-//  Call_HistoryAppDelegate.m
-//  Call History
+//  CallHistoryAppDelegate.m
+//  CallHistory
 //
 //  Created by Ben Bruscella on 16/05/11.
 //  Copyright 2011 SPK. All rights reserved.
 //
 
-#import "Call_HistoryAppDelegate.h"
-
+#import "CallHistoryAppDelegate.h"
 #import "RootViewController.h"
 
-@implementation Call_HistoryAppDelegate
+@implementation CallHistoryAppDelegate
 
 
 @synthesize window=_window;
@@ -25,6 +24,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     // Override point for customization after application launch.
     // Add the navigation controller's view to the window and display.
     self.window.rootViewController = self.navigationController;
@@ -38,6 +38,7 @@
      Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
      Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
      */
+    NSLog(@"***applicationWillResignActive");
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
@@ -46,6 +47,8 @@
      Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
      If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
      */
+    NSLog(@"***applicationDidEnterBackground");
+
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -53,6 +56,8 @@
     /*
      Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
      */
+    NSLog(@"***applicationWillEnterForeground");
+
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
@@ -60,6 +65,7 @@
     /*
      Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
      */
+    NSLog(@"***applicationDidBecomeActive");
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
@@ -135,7 +141,7 @@
     {
         return __managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Call_History" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"CallHistory" withExtension:@"momd"];
     __managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];    
     return __managedObjectModel;
 }
@@ -151,7 +157,7 @@
         return __persistentStoreCoordinator;
     }
     
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"Call_History.sqlite"];
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"CallHistory.sqlite"];
     
     NSError *error = nil;
     __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];

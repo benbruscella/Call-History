@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Call History.xcodeproj">
+      location = "self:CallHistory.xcodeproj">
    </FileRef>
 </Workspace>
